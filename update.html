@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Update Event | Campus Events</title><link rel="stylesheet" href="style.css"><script src="event.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="list.html">All Events</a><a href="insert.html">Add Event</a><a class="active" href="list1.html">Manage Events</a><a href="about.html">About</a></nav><a class="header-cta" href="list1.html">← Manage events</a></header>
+<main><section class="page-hero page-hero-form"><div class="page-hero-shade"></div><div class="page-hero-content"><p class="eyebrow">KEEP DETAILS CURRENT</p><h1>Plans change.<br><span>Update with ease.</span></h1><p>Edit the event details and save your changes.</p></div></section>
+<section class="section wrap form-layout"><div class="form-intro"><p class="eyebrow eyebrow-dark">EDIT EVENT</p><h2>Update event <span>details.</span></h2><p>Enter the event ID to load its current details, make your changes, and save.</p><div class="form-tip"><span>✦</span><p><b>Where do I find the ID?</b><br>Open Manage Events to see the ID beside each record.</p></div></div>
+<div><form id="load-update-form" class="inline-load-form"><label>Event ID<input name="id" type="number" min="1" required placeholder="e.g. 3"></label><button class="button button-primary" type="submit">Load event</button></form>
+<form id="update-form" class="event-form hidden"><div class="form-heading"><span class="form-step">02</span><div><h3>Edit information</h3><p>Changes are saved to your database.</p></div></div>
+<label>Event name *<input name="name" required maxlength="45"></label><div class="form-row"><label>Event date *<input name="date" type="date" required></label><label>Event time *<input name="time" type="time" required></label></div>
+<label>Venue *<input name="venue" required maxlength="150"></label><label>Description *<textarea name="description" required rows="4"></textarea></label>
+<div id="update-message" class="form-message hidden" role="status"></div><div class="form-actions"><button class="button button-primary" type="submit">Save changes <span>→</span></button><a class="button button-plain" href="list1.html">Cancel</a></div></form><div id="load-message" class="form-message hidden" role="status"></div></div></section></main>
+<footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a><p>Made for the moments that bring a campus together.</p><span>© <span id="year"></span> Campus Events</span></footer>
+</body></html>

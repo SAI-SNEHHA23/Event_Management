@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Events | College Event Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="event.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="list.html">All Events</a>
+      <a href="insert.html">Add Event</a>
+      <a href="list1.html">Manage Events</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="header-cta" href="insert.html">＋ Create event</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR CAMPUS. YOUR MOMENTS.</p>
+        <h1>Make campus<br><span>moments matter.</span></h1>
+        <p class="hero-copy">One place for tech fests, cultural celebrations, sports meets, workshops and unforgettable college memories.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="list.html">Explore events <span>↗</span></a>
+          <a class="button button-glass" href="insert.html">＋ Add an event</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> Plan together. Celebrate together.</div>
+      </div>
+      <div class="hero-chip"><span class="chip-icon">✦</span><span><b>Every event, one place</b><small>Discover what's happening on campus</small></span></div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow eyebrow-dark">WHAT'S HAPPENING</p><h2>Find your next <span>favorite moment.</span></h2></div>
+        <a class="text-link" href="list.html">View all events <span>→</span></a>
+      </div>
+      <div class="event-grid" id="home-events">
+        <div class="loading-card">Loading events from your database…</div>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="feature-inner wrap">
+        <div><p class="eyebrow">SIMPLE. ORGANIZED. CONNECTED.</p><h2>From first idea<br>to final applause.</h2></div>
+        <p>Keep your college event details organized in one place. Browse event dates, check venues, and add or update records directly through this website.</p>
+        <a class="button button-light" href="list1.html">Manage your events <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section wrap category-section">
+      <div class="section-heading"><div><p class="eyebrow eyebrow-dark">MADE FOR CAMPUS LIFE</p><h2>Something for <span>everyone.</span></h2></div></div>
+      <div class="category-grid">
+        <a class="category-card category-tech" href="list.html"><span>01 / LEARN</span><b>Tech fests & workshops</b><small>Build, explore, innovate ↗</small></a>
+        <a class="category-card category-culture" href="list.html"><span>02 / PERFORM</span><b>Cultural celebrations</b><small>Share your talent ↗</small></a>
+        <a class="category-card category-sport" href="list.html"><span>03 / PLAY</span><b>Sports & annual day</b><small>Bring the energy ↗</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a><p>Made for the moments that bring a campus together.</p><span>© <span id="year"></span> Campus Events</span></footer>
+</body>
+</html>

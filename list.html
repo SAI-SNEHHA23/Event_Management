@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>All Events | Campus Events</title><link rel="stylesheet" href="style.css"><script src="event.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="list.html">All Events</a><a href="insert.html">Add Event</a><a href="list1.html">Manage Events</a><a href="about.html">About</a></nav><a class="header-cta" href="insert.html">＋ Create event</a></header>
+<main>
+<section class="page-hero page-hero-events"><div class="page-hero-shade"></div><div class="page-hero-content"><p class="eyebrow">CAMPUS CALENDAR</p><h1>Every event.<br><span>One place.</span></h1><p>Explore what's coming up and find the events you don't want to miss.</p></div></section>
+<section class="section wrap">
+<div class="section-heading"><div><p class="eyebrow eyebrow-dark">EVENT DIRECTORY</p><h2>All campus <span>events</span></h2></div><a class="button button-primary" href="insert.html">＋ Add event</a></div>
+<div class="toolbar"><input id="event-search" type="search" placeholder="Search name, venue or description…" aria-label="Search events"><span id="event-count" class="muted">Loading events…</span></div>
+<div id="event-list" class="event-grid event-grid-list"><div class="loading-card">Loading events from your database…</div></div>
+<div id="empty-state" class="empty-state hidden"><div class="empty-icon">✦</div><h3>No events found</h3><p>Try a different search or add a new event.</p><a class="button button-primary" href="insert.html">Create an event</a></div>
+<div id="notice" class="notice hidden" role="status"></div>
+</section></main>
+<footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a><p>Made for the moments that bring a campus together.</p><span>© <span id="year"></span> Campus Events</span></footer>
+</body></html>

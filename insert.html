@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Add Event | Campus Events</title><link rel="stylesheet" href="style.css"><script src="event.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="list.html">All Events</a><a class="active" href="insert.html">Add Event</a><a href="list1.html">Manage Events</a><a href="about.html">About</a></nav><a class="header-cta" href="list.html">Browse events</a></header>
+<main><section class="page-hero page-hero-form"><div class="page-hero-shade"></div><div class="page-hero-content"><p class="eyebrow">MAKE IT HAPPEN</p><h1>Put your event<br><span>on the calendar.</span></h1><p>Add the details and save the new event to your MySQL database.</p></div></section>
+<section class="section wrap form-layout"><div class="form-intro"><p class="eyebrow eyebrow-dark">NEW EVENT</p><h2>Let's make it <span>official.</span></h2><p>Complete all fields below. Your new event will appear in the event directory after saving.</p><div class="form-tip"><span>✦</span><p><b>Quick tip</b><br>Use a clear event name and include helpful venue or activity details.</p></div></div>
+<form id="event-form" class="event-form"><div class="form-heading"><span class="form-step">01</span><div><h3>Event information</h3><p>Fields marked with * are required.</p></div></div>
+<label>Event name *<input name="name" required maxlength="45" placeholder="e.g. Cultural Fest"></label>
+<div class="form-row"><label>Event date *<input name="date" type="date" required></label><label>Event time *<input name="time" type="time" required></label></div>
+<label>Venue *<input name="venue" required maxlength="150" placeholder="e.g. Main college auditorium"></label>
+<label>Description *<textarea name="description" required rows="4" placeholder="What is this event about?"></textarea></label>
+<div id="form-message" class="form-message hidden" role="status"></div><div class="form-actions"><button class="button button-primary" type="submit">Save event <span>→</span></button><a class="button button-plain" href="list.html">Cancel</a></div>
+</form></section></main><footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Events</span></span></a><p>Made for the moments that bring a campus together.</p><span>© <span id="year"></span> Campus Events</span></footer>
+</body></html>
